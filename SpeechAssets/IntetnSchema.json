@@ -1,0 +1,25 @@
+{
+  "intents": [
+    {
+      "slots": [
+        {
+          "name": "Keyword",
+          "type": "LIST_OF_TOPICS"
+        }
+      ],
+      "intent": "getSynonyms"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+     {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    },
+    {
+      "intent": "SessionEndedRequest"
+    }
+  ]
+}

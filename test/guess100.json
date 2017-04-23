@@ -1,0 +1,33 @@
+{
+  "session": {
+    "sessionId": "SessionId.18197421-0d30-4ccf-ba03-f4bb49c868fd",
+    "application": {
+      "applicationId": "amzn1.ask.skill.dc50091f-6690-4c72-8c79-72174f6b7602"
+    },
+    "attributes": {
+      "Keyword": "laufen",
+
+      "STATE": "_ASK_MODE"
+    },
+    "user": {
+      "userId": "amzn1.ask.account.AH5QSL7SSTZD5IYESTLAZ6G654G3GG2B5NKC6A6JHLO2VLAXK5YSHIZJUIHA4GMUR7KSUJ4DCSLK7IIAZLVPNYLPEQLBJ45K2TI53ANWIKZ6TYHYNO6RDFCP5GJNRL4Z3CR2OAXKCGTIT2UMKNZNGUQCIQBGKPPOLYCDZRNZUAB7DQ4ABNDHDQTX3Y6KUUOIYUQCO64ZCE5AENY"
+    },
+    "new": false
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "EdwRequestId.0120e5de-c862-4fbf-8df3-1e49a90f9341",
+    "locale": "de-DE",
+    "timestamp": "2017-04-23T00:20:34Z",
+    "intent": {
+      "name": "getSynonyms",
+      "slots": {
+        "Keyword": {
+          "name": "Keyword",
+          "value": "laufen"
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

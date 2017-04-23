@@ -1,0 +1,32 @@
+{
+  "name": "alexa_talos_april",
+  "version": "0.0.1",
+  "description": "Super simple talos app",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "talos",
+    "alexa",
+    "node"
+  ],
+  "dependencies": {
+    "alexa-message-builder": "^1.1.0",
+    "alexa-sdk": "^1.0.7",
+    "async": "^2.2.0",
+    "aws-sdk": "^2.34.0",
+    "csvtojson": "^1.1.4",
+    "lodash": "^4.3.0",
+    "mocha": "^3.2.0",
+    "request-promise": "^4.2.0",
+    "round-to": "^2.0.0",
+    "string-similarity": "^1.1.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.3"
+  },
+  "author": "Tomasz Tkaczyk+",
+  "license": "ISC"
+}
