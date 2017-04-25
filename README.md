@@ -1,6 +1,9 @@
 # Synonyme
 Alexa Synonym Finder in German 
 
-Simple Alexa Skill written in NodeJS ready to host on AWS Lambda ! 
+Alexa Skill written in NodeJS ready to host on AWS Lambda ! 
+This skils uses openthesarus api to fetch the synonyms for given name and truncate resulst in to few words for each request. 
 
-App goes live on Alexa Store soon ! Stay tuned
+
+API
+https://www.openthesaurus.de/about/api
