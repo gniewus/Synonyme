@@ -16,7 +16,7 @@ var intentHandlers = {
         // var data = topicHelp.resolveSynonym(kword);
             var url = 'https://www.openthesaurus.de/synonyme/search?q=' + encodeURI(kword) + '&format=application/json';
 
-          var options = {
+    var options = {
         uri: url,
         headers: {
             'User-Agent': 'Request-Promise'
@@ -31,7 +31,7 @@ var intentHandlers = {
                 var list = feedParser(repos);
                 this.attributes['data']= list;
 
-                this.emit("formSynonyms",list);
+                this.emit("formSynonyms", list);
 
             })
             .catch( (err)=> {

@@ -20,15 +20,11 @@ var stateHandlers = {
                     this.attributes['Keyword']= keyword;
                     this.emit('SynonymsIntent');
                     
-
                 }else{
                     this.emit(":ask", "Leider habe ich das Wort nicht verstanden, frag mich noch mal");
                 }
                 
-            },
-     
- 
-
+    },
     'AMAZON.HelpIntent': function () {
             let message = "Ich kann dir ein Synonym für das gewünschte wort ausuchen. Frag mich zum beispiel, nach synonym für. laufen";
             this.emit(":ask",message,message);
@@ -43,8 +39,8 @@ var stateHandlers = {
         if(!_.isEmpty(this.attributes['data'])) {
             var list = this.attributes['data'];
             if (list.length>5){
-                this.attributes['data']=list.slice(5,list.length);
-
+                this.attributes['data']=list.slice(5,list.length-1);
+//TODO: Better verification if there are other synonyms
                 this.emit("formFurtherSynonyms",list)
             }else {
 

@@ -14,10 +14,10 @@ var speechHandlers = {
         // Output welcome message with card
         var message = config.welcome_message
             + constants.breakTime['100'] +
-            'Du kannst mir nach die Synonyme für das gewünschte Wort fragen';
+            'Du kannst mich nach Synonymen für das gewünschte Wort fragen';
 
 
-        var cardTitle = 'Willkomen bei SynonymSuche';
+        var cardTitle = 'Willkomen bei Synonym Suche';
         var cardContent = 'Frag mich nach ein begriff und ich finde die Synonyme dafür ! ';
          var imageObj = {
             smallImageUrl: 'https://www.publicispixelpark.de/fileadmin/templates/images/logo_pub_pix.png',
@@ -31,17 +31,18 @@ var speechHandlers = {
     "formSynonyms": function(list){
 
 
-        let repromt = ' Soll ich weiter aufzählen ?';
+        let repromt = ' Soll ich weitere aufzählen ?';
         var message = formatSynonymsResponse(list,this.attributes['Keyword'])
          this.attributes['data']=list.slice(5,list.length);
+         //TODO: Filter repetions before storing
         this.emit(':ask', message, repromt);
     },
 
     "formFurtherSynonyms": function (list) {
         
-        this.attributes['data']=list;
+        this.attributes['data']=list.slice(3,list.length-1);
           var repromt;
-        if(list.length >5){
+        if(list.length >3){
             var repromt = "Du kannst mir weitere fragen stellen oder, Soll ich weiter aufzählen? ";
         }else {
             repromt="Du kannst mir nach andere Wörter fragen";
